@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=============== nav bar style =======================*/
+.links a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr  2fr;
+    align-items: center;
+    background: brown;
+    height: 80px;
+}
+.links{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+   }
+@media screen and (max-width:700px) {
+    .container{
+        height: 100%;
+        grid-template-columns: 1fr  ;
+        align-items: center;
+        text-align: center;   
+    }
+    .links {
+      display: block;    
+    }
+     .links .episodes:hover > ul{
+    display: block;
+    position: relative;
+}}
+.logo{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.logo span{
+    color: blue;
+ }
+.links .block {
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    }
+.links .block a:hover{
+    color:cyan
+    }
+.links ul  {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    border-radius: 5px;
+}
+.links .episodes{
+   position: relative;
+}
+.links ul li{
+    background: brown;
+    list-style: none;
+}
+.links .episodes:hover > ul{
+    display: block;
+}
+
+/*================================================*/
+
