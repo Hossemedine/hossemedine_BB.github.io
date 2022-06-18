@@ -221,3 +221,16 @@
         min-height: 100vh;
         
     }
+
+    .api{
+        background: rgb(105, 101, 101);
+        color: whitesmoke;
+        padding-left: 50px;
+    }
+
+    .api a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    
