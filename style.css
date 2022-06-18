@@ -9,7 +9,7 @@
     color: white;
     text-decoration: none;
 }
-.container{
+.nav_bar{
     display: grid;
     grid-template-columns: 1fr  2fr;
     align-items: center;
@@ -24,7 +24,7 @@
     font-size: 25px;
    }
 @media screen and (max-width:700px) {
-    .container{
+    .nav_bar{
         height: 100%;
         grid-template-columns: 1fr  ;
         align-items: center;
@@ -148,3 +148,76 @@
     display: flex;
     justify-content: center;
 }
+
+
+/*=========================================================================== 
+           STyle character page
+
+============================================================================*/
+
+
+.card{
+    
+    
+    box-shadow: 5px 6px 5px 6px grey;
+    width: 250px;
+    height: 350px;
+   margin: 55px;
+    overflow: hidden;
+  transition: 0.3s;
+}
+
+.card img{    
+    width: 100%;
+   height:100%;
+}
+
+.card .container{
+    padding: 15px 10px;
+    box-sizing: border-box;
+    background: rgba(216, 202, 202, 0.3);
+    color:rgb(10, 10, 10);
+    position: relative;
+    bottom: 50px;
+    transition: 0.6s ease-out;
+}
+
+
+
+.container p{
+    font-size: 20px;
+    padding: 10px;
+    visibility: hidden;
+    opacity:0.5;
+}
+
+.container p span{
+    font-weight: 800;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+.card:hover >.container{
+    bottom: 220px;
+    cursor: pointer;
+    height: 550px;
+}
+
+.card:hover > .container p{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+    .char_box{
+        padding: 25px 15px;
+        display: flex ;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        background: grey;
+        height: 100%;
+        min-height: 100vh;
+        
+    }
