@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/episodes.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="nav_bar">
+        <div class="logo"><h1>Breaking<span>BAD</span></h1></div>
+        
+        <div class="links">
+            <div class="block home"><a href="index.html">home</a></div>
+            <div class="block characters"><a href="characters.html">characters</a></div>
+            
+            <div class="block episodes"><a href="#">episodes</a>
+                <ul class="drop" >
+                    <li><a href="#" id="1">seasons1</a></li>
+                    <li><a href="#" id="2">seasons2</a></li>
+                    <li><a href="#" id="3">seasons3</a></li>
+                    <li><a href="#" id="4">seasons4</a></li>
+                    <li><a href="#" id="5">seasons5</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="block quots"><a href="">quots</a></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div id="season_n" class="season_n"></div>
+
+    <div class="main_contetnt">
+        <h1>Choose an episode!</h1>
+        <div class="select_container" id="select_container">
+
+            <select class="episode_select" id="episode_select" onchange="showInfo(this.value)">
+             <div class="episodes_options" id="episodes_options">
+                
+             </div>
+             </select>
+        </div>
+
+        
+    </div>
+    <div class="info" id="info">
+         
+    </div>
+    </div>
+   
+    <script src="js/getseason.js"></script>
+    <script src="js/episodes.js"></script>
+</body>
+</html>

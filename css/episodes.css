@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-repeat: no-repeat;
+    background-size: fill;
+   /*  background: linear-gradient(27deg, rgba(1,36,0,1) 0%, rgba(9,103,121,0.5998774509803921) 77%, rgba(227,232,15,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh; */
+}
+
+
+
+
+.main{
+    height: 90vh;
+
+    background-image: url(/img/bg.jpg);
+    /* background: linear-gradient(27deg, rgba(1,36,0,1) 0%, rgba(9,103,121,0.5998774509803921) 77%, rgba(227,232,15,1) 100%); */
+     background-size: cover; 
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+     
+}
+
+
+@media (max-width:850px){
+    
+      .main{
+        background-image: url(/img/bg.jpg);
+           background-repeat: no-repeat; 
+          background-size: 100% 100%;
+     }
+    }
+
+
+.main_contetnt{
+    
+    
+   display: grid;
+   grid-template-columns: 3fr 6fr;
+   
+   justify-content: space-around;
+   text-align: center;
+}
+
+    @media (max-width:800px){
+        .main_contetnt{
+           display: block;
+        }
+    }
+
+.main_contetnt h1{
+    color: white;
+    margin-top: 10px;
+   
+}
+.select_container{
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    
+}
+
+.episode_select{
+    background: grey;
+    
+    width: 100%;
+    margin: auto;
+    height: 35px;
+    
+    font-size: 15px;
+    letter-spacing: 2px;
+
+}
+
+
+.info{
+    padding: 0 10% ;
+    text-align:left;
+    width: 60%;
+    display: block;
+}
+
+@media (max-width:600px){
+    .info{
+        width: 100%;
+    }
+}
+
+.info h1{
+    color: brown;
+    font-size: 55px;
+}
+
+.info h3{
+    color: rgb(4, 4, 207);
+    font-size: 45px;
+}
+
+.info span{
+    color: white;
+    font-size: 20px;
+}
+
+.season_n {
+    color: blue;
+
+}
+
+.season_n span{
+    color: white;
+}

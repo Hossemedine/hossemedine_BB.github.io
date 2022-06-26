@@ -38,7 +38,8 @@ body{
       display: block;    
     }
      .links .episodes:hover > ul{
-    display: block;
+    /* display: block; */
+    visibility: visible;
     position: relative;
 }}
 .logo{
@@ -62,7 +63,8 @@ body{
     position: absolute;
     flex-direction: column;
     width: 100%;
-    display: none;
+    
+    visibility: hidden;
     border-radius: 5px;
 }
 .links .episodes{
@@ -73,7 +75,8 @@ body{
     list-style: none;
 }
 .links .episodes:hover > ul{
-    display: block;
+    
+    visibility: visible;
 }
 
 /*================================================*/
@@ -86,7 +89,7 @@ body{
 
 .main .bg{
     border: 1px red;
-    background-image: url(img/5.jpg);
+    background-image: url(/img/5.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;  
      
