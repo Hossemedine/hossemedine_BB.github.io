@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quotes.css">
     <title>Document</title>
 </head>
-<body>
+<body class="q_body">
+
     <div class="nav_bar">
         <div class="logo"><h1>Breaking<span>BAD</span></h1></div>
         
@@ -23,41 +25,32 @@
                     <li><a href="episodes.html" id="4">seasons4</a></li>
                     <li><a href="episodes.html" id="5">seasons5</a></li>
                     
-                    
                 </ul>
             </div>
             
-            <div class="block quots"><a href="quotes.html">quots</a></div>
+            <div class="block quots"><a href="">quots</a></div>
         </div>
     </div>
 
-    <div class="api">
-        <h4>I used this API for the project  :</h4>
-        <h5> <a href="https://breakingbadapi.com/" target="_blank">https://breakingbadapi.com/</a> </h5>
+    <div class="quote_container">
+
+    <div class="q_main" id="q_main">
+        <button class="clik" id="generate_quote" onclick="generateQuote()">Click here toGenerate a random quote</button>
+        <div class="quote_block hidden" id="quote_block">
+
+            
+            
+        </div>
     </div>
-    <div class="char_box" id="char_box">
+</div>
 
-        
+<div class="footer">
+    <h2>Page created by: Hossem edine ali</h2>
+    
+    
+</div>
 
-    </div>
-
-
-
-    <div id="pagination" class="pagination">
-        
-
-    </div>
-
-     
-
-
-    <div class="footer">
-        <h2>Page created by: Hossem edine ali</h2>
-        
-        
-    </div>
-
-<script src="js/main.js"></script>
-<script src="js/getseason.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/getseason.js"></script>
 </body>
 </html>
