@@ -19,7 +19,7 @@ body{
 .main{
     height: 90vh;
 
-    background-image: url(/img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     /* background: linear-gradient(27deg, rgba(1,36,0,1) 0%, rgba(9,103,121,0.5998774509803921) 77%, rgba(227,232,15,1) 100%); */
      background-size: cover; 
     

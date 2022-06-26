@@ -1,81 +1,95 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: grey;
 }
 
 /*=============== nav bar style =======================*/
-.links a{
+.links a {
     color: white;
     text-decoration: none;
 }
-.nav_bar{
+
+.nav_bar {
     display: grid;
-    grid-template-columns: 1fr  2fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     background: darkblue;
     height: 80px;
 }
-.links{   
+
+.links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     text-align: center;
     font-size: 25px;
-   }
+}
+
 @media screen and (max-width:700px) {
-    .nav_bar{
+    .nav_bar {
         height: 100%;
-        grid-template-columns: 1fr  ;
+        grid-template-columns: 1fr;
         align-items: center;
-        text-align: center;   
+        text-align: center;
     }
+
     .links {
-      display: block;    
+        display: block;
     }
-     .links .episodes:hover > ul{
-    /* display: block; */
-    visibility: visible;
-    position: relative;
-}}
-.logo{
+
+    .links .episodes:hover>ul {
+        /* display: block; */
+        visibility: visible;
+        position: relative;
+    }
+}
+
+.logo {
     color: white;
     font-size: 15px;
     font-weight: 500;
 }
-.logo span{
+
+.logo span {
     color: blue;
- }
+}
+
 .links .block {
     border-radius: 5px;
     height: auto;
     width: 100%;
-    }
-.links .block a:hover{
-    color:cyan
-    }
-.links ul  {
+}
+
+.links .block a:hover {
+    color: cyan
+}
+
+.links ul {
     display: flex;
     position: absolute;
     flex-direction: column;
     width: 100%;
-    
+
     visibility: hidden;
     border-radius: 5px;
 }
-.links .episodes{
-   position: relative;
+
+.links .episodes {
+    position: relative;
 }
-.links ul li{
+
+.links ul li {
     background: darkblue;
     list-style: none;
 }
-.links .episodes:hover > ul{
-    
+
+.links .episodes:hover>ul {
+
     visibility: visible;
 }
 
@@ -83,20 +97,20 @@ body{
 
 /*========================style main====================*/
 
-.main{
-    background: #050516;  
+.main {
+    background: #050516;
 }
 
-.main .bg{
+.main .bg {
     border: 1px red;
-    background-image: url(/img/5.jpg);
+    background-image: url(../img/5.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;  
-     
+    background-size: 100% 100%;
+
 }
 
 
-.main .bg{
+.main .bg {
     width: 100%;
     height: 90vh;
 }
@@ -108,28 +122,28 @@ body{
     margin-left: 15%;
 }
 
-.box{
+.box {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-@media ( max-width:600px){
-    .box{
+@media (max-width:600px) {
+    .box {
         display: block;
     }
 
-    .box .box-img{
+    .box .box-img {
         text-align: center;
     }
 }
 
-.box .box-img{
-    height:100% ;
+.box .box-img {
+    height: 100%;
     width: 100%;
 }
 
-.box-content{
-    
+.box-content {
+
     text-align: center;
 
 }
@@ -140,7 +154,7 @@ body{
     text-align: center;
 }
 
-.box-content p{
+.box-content p {
     color: white;
 }
 
@@ -148,7 +162,7 @@ body{
 
 /*======================footer===================*/
 
-.footer{
+.footer {
     height: 30px;
     background: darkblue;
     color: white;
@@ -163,27 +177,27 @@ body{
 ============================================================================*/
 
 
-.card{
-    
-    
+.card {
+
+
     box-shadow: 5px 6px 5px 6px grey;
     width: 220px;
     height: 250px;
-   margin: 35px;
+    margin: 35px;
     overflow: hidden;
-  transition: 0.3s;
+    transition: 0.3s;
 }
 
-.card img{    
+.card img {
     width: 100%;
-   height:100%;
+    height: 100%;
 }
 
-.card .container{
+.card .container {
     padding: 10px 10px;
     box-sizing: border-box;
     background: rgba(216, 202, 202, 0.3);
-    color:rgb(10, 10, 10);
+    color: rgb(10, 10, 10);
     position: relative;
     bottom: 70px;
     transition: 0.6s ease-out;
@@ -191,97 +205,101 @@ body{
 
 
 
-.container p{
+.container p {
     font-size: 17px;
     padding: 3px;
     visibility: hidden;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
-.container p span{
+.container p span {
     font-weight: 800;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
 }
-.card:hover >.container{
+
+.card:hover>.container {
     bottom: 180px;
     cursor: pointer;
     height: 550px;
 }
 
-.card:hover > .container p{
+.card:hover>.container p {
     visibility: visible;
     opacity: 1;
 }
 
 
-    .char_box{
-        padding: 25px 15px;
-        display: flex ;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        
-        background: grey;
-        height: 100%;
-        min-height: 100vh;
-        
-    }
+.char_box {
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-    .api{
-        display: block;
+    background: grey;
+    height: 100%;
+    min-height: 100vh;
 
-        background: rgb(105, 101, 101);
-        color: whitesmoke;
-        padding-left: 50px;
-    }
+}
 
-    .api a{
-        
-        color: whitesmoke;
-        text-decoration: none;
-    }
+.api {
+    display: block;
+
+    background: rgb(105, 101, 101);
+    color: whitesmoke;
+    padding-left: 50px;
+}
+
+.api a {
+
+    color: whitesmoke;
+    text-decoration: none;
+}
 
 
 
-.pagination{
-    
+.pagination {
+
     height: auto;
     max-width: 25%;
     min-width: fit-content;
     margin: auto;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 150px;
 }
 
-.pagination .prev_btn{
+.pagination .prev_btn {
     background: #a4c9da;
     width: 2rem;
-    padding: auto ;
+    padding: auto;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     font-weight: 900;
 }
 
 
-.pagination .next_btn{
+.pagination .next_btn {
     background: #a4c9da;
     width: 2rem;
-    padding: auto ;
+    padding: auto;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     font-weight: 900;
 }
-.p_num{
+
+.p_num {
     padding: 0 3px;
-    margin:0 5px;
+    margin: 0 5px;
     background: #a4c9da;
-    padding: auto ;
+    padding: auto;
 }
 
-.pagination .next_btn , .prev_btn , .p_num :hover{
+.pagination .next_btn,
+.prev_btn,
+.p_num :hover {
     cursor: pointer;
 }
